@@ -2,7 +2,7 @@
 
 Automate the deployment of a static website using Apache2 web server with Ansible.
 
-## Prerequisites
+## Requirements
 
 - Ubuntu/Debian-based system (control node)
 - Python 3.8+
