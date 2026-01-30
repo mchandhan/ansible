@@ -39,9 +39,8 @@ cd Ansible-code-to-launch-an-static-website-using-apache2
 
 ### 3. Configure the path of the html file
 
-```bash
 In file write.yml change the src: path to your written new index.html path
-```
+
 
 ### 4. Test Connection
 
