@@ -4,7 +4,7 @@ Automate the deployment of a static website using Apache2 web server with Ansibl
 
 ## Requirements
 
-- Ubuntu/Debian-based system (control node)
+- Ubuntu/Debian-based system
 - Python 3.8+
 - SSH access to target servers
 - Target servers running Ubuntu/Debian
@@ -87,19 +87,15 @@ ansible-playbook -i hosts.ini main.yml --syntax-check
 ansible-playbook -i hosts.ini main.yml --check
 
 # Deactivate virtual environment
+# Deactivate the Virtual environment after the dry run of ansible-playbook
+
 deactivate
-```
-
-## Troubleshooting
-
-**Check Apache Status:**
-```bash
-"sudo systemctl status apache2"
 ```
 
 ## Customize Your Website
 
-Edit `index.html` to change your website content, then run:
+To change the content of the Website
+Edit `index.html`, then run:
 
 ```bash
 ansible-playbook -i hosts.ini main.yml
