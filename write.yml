@@ -1,0 +1,12 @@
+---
+- name: Deploy custom index.html
+  hosts: ubuntu
+  become: true
+  tasks:
+    - name: copying files
+      copy:
+        src: /home/new/ansible/index.html   # path on your Ansible control machine
+        dest: /var/www/html/index.html  # target path on the remote host
+        owner: www-data
+        group: www-data
+        mode: '0644'

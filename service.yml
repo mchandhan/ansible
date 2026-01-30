@@ -1,0 +1,13 @@
+---
+- name: service file
+  hosts: ubuntu
+  become: true
+  tasks:
+    - name: status check
+      service:
+        name: "{{ item }}"
+        state: started
+        enabled: yes
+      loop:
+        - apache2
+        - cron
