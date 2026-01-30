@@ -33,13 +33,13 @@ ansible --version
 ### 2. Clone Repository
 
 ```bash
-git clone https://github.com/mchandhan/Ansible-code-to-launch-an-static-website-using-apache2.git
-cd Ansible-code-to-launch-an-static-website-using-apache2
+git clone https://github.com/mchandhan/Using-Ansible-Static-Website.git
+cd Using-Ansible-Static-Website
 ```
 
 ### 3. Configure the path of the html file
 
-In file write.yml change the src: path to your written new index.html path
+In file write.yml change the src: path to your written new index.html path or the path to the given index.html
 
 
 ### 4. Test Connection
