@@ -1,0 +1,13 @@
+---
+- name: info gatherer
+  hosts: ubuntu
+  tasks:
+    - name: display gathered facts
+      ansible.builtin.debug:
+        var: ansible_facts
+
+    - name: display the current running kernal version and distro
+      ansible.builtin.debug:
+        msg: " the kernal version is {{ ansible_facts.kernel }} and the distro is {{ ansible_facts.distribution }} "
+
+

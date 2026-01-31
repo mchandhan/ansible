@@ -2,3 +2,4 @@
 - import_playbook: apt.yml
 - import_playbook: service.yml
 - import_playbook: write.yml
+- import_playbook: info.yml
