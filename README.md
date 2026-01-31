@@ -5,7 +5,7 @@ Automate the deployment of a static website using Apache2 web server with Ansibl
 ## Requirements
 
 - Ubuntu/Debian-based system
-- Python 3.8+
+- Python 3.8+ 
 - SSH access to target servers
 - Target servers running Ubuntu/Debian
 
