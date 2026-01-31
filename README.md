@@ -83,8 +83,11 @@ ansible-playbook -i hosts.ini write.yml
 # Check syntax before running
 ansible-playbook -i hosts.ini main.yml --syntax-check
 
-# Dry run (test without changes)
+# Dry run
 ansible-playbook -i hosts.ini main.yml --check
+
+Dry run with authenticating
+ansible-playbook -i hosts.ini -u ansible --ask-pass main.yml
 
 # Deactivate virtual environment
 # Deactivate the Virtual environment after the dry run of ansible-playbook
