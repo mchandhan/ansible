@@ -5,7 +5,7 @@
   tasks:
     - name: copying files
       copy:
-        src: /home/new/ansible/index.html   # path of your src file
+        src: /home/ubuntu/Using-Ansible-Static-Website/index.html   # path of your src file
         dest: /var/www/html/index.html
         owner: www-data
         group: www-data
